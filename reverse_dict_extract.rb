@@ -37,9 +37,7 @@ end
 
 if found == should_find
     puts "All good, found #{lemmas.size} distinct words"
-    lemmas.each do | e |
-        puts e
-    end
+    puts lemmas.to_a.join(" ")
 else
     puts "Error, found only #{found}"
 end
